@@ -1,29 +1,38 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CartComponent } from './cart.component';
-import { CheckoutSuccess } from './checkout-success.component';
-import { CreateForm } from './create-form.component';
-import { HeaderComponent } from './component/header/header.component';
-import { NavbarComponent } from './component/navbar/navbar.component';
-import { ProductItemDetail } from './product-item-detail.component';
-import { ProductList } from './product-list.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { HeaderComponent } from './components/header/header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProductItemDetailComponent } from './components/product-item-detail/product-item-detail.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CartComponent } from './components/cart/cart.component';
+import { CreateFormComponent } from './components/create-form/create-form.component';
+import { CheckoutSuccessComponent } from './components/checkout-success/checkout-success.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CartComponent,
-    CheckoutSuccessComponent,
-    CreateFormComponent,
+    ProductListComponent,
     HeaderComponent,
-    NavbarComponent,
     ProductItemDetailComponent,
-    ProductListComponent
+    NavbarComponent,
+    CartComponent,
+    CreateFormComponent,
+    CheckoutSuccessComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    FlexLayoutModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
