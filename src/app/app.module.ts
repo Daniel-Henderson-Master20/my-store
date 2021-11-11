@@ -9,6 +9,8 @@ import { CheckoutSuccess } from './component/checkout-success/checkout-success.c
 import { CreateForm } from './component/create-form/create-form.component/create-form.component.component';
 import { Header } from './component/header/header.component/header.component.component';
 import { Navbar } from './component/navbar/navbar.component/navbar.component.component';
+import { ProductItemDetail } from './component/product-item-detail/product-item-detail.component/product-item-detail.component.component';
+import { ProductList } from './component/product-list/product-list.component/product-list.component.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { Navbar } from './component/navbar/navbar.component/navbar.component.com
     CheckoutSuccess.ComponentComponent,
     CreateForm.ComponentComponent,
     Header.ComponentComponent,
-    Navbar.ComponentComponent
+    Navbar.ComponentComponent,
+    ProductItemDetail.ComponentComponent,
+    ProductList.ComponentComponent
   ],
   imports: [
     BrowserModule,
