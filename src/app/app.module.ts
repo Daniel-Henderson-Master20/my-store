@@ -8,6 +8,7 @@ import { Cart } from './componentw/cart/cart.component/cart.component.component'
 import { CheckoutSuccess } from './component/checkout-success/checkout-success.component/checkout-success.component.component';
 import { CreateForm } from './component/create-form/create-form.component/create-form.component.component';
 import { Header } from './component/header/header.component/header.component.component';
+import { Navbar } from './component/navbar/navbar.component/navbar.component.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Header } from './component/header/header.component/header.component.com
     Cart.ComponentComponent,
     CheckoutSuccess.ComponentComponent,
     CreateForm.ComponentComponent,
-    Header.ComponentComponent
+    Header.ComponentComponent,
+    Navbar.ComponentComponent
   ],
   imports: [
     BrowserModule,
